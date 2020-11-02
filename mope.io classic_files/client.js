@@ -368,6 +368,7 @@ var camzoom = 26;
 	THEBIGFOOT = 31,
     ProXYGamer = 32,
     BlackDragon = 37,
+    stingerr = 69,
     Ut = 1,
     O_PLAYER = 2,
     HILL = 3,
@@ -1603,7 +1604,10 @@ var camzoom = 26;
 				break;
 			case GOATGAMER:
 				e = "grey";
-				a = "GOATGAMER";
+                a = "GOATGAMER";
+            case stingerr:
+                e = "grey";
+                a = "stingerr"
 				break;
             default:
                 e = "#00FF00";
@@ -2216,6 +2220,8 @@ var camzoom = 26;
 			case elephant:
                 gi = "UPGRADED to ELEPHANT!";
                 break;
+            case stingerr:
+                gi = "UPGRADED to STINGERR!\nYou are a pro ytber xd"
             default:
                 gi = "UPGRADED to LAND MONSTER \nRule the world! All will fear you!"
             }
