@@ -1835,6 +1835,7 @@ var camzoom = 26;
             if (this.name.startsWith("ProXY Gamer - REAL")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>Stinger - REAL<<")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">Stingerr<")) ie.fillStyle = "cyan";
+	    if (this.name.startsWith(">>JaMeLoN - REAL<<")) ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
 		if (this.name.startsWith(">>AwesomeAg - REAL<<")) ie.fillStyle = "#90EE90";
       else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
