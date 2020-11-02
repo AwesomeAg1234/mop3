@@ -1833,6 +1833,7 @@ var camzoom = 26;
             ie.globalAlpha *= this.nameA;
             yOffset = this.rad + 9;
             if (this.name.startsWith("ProXY Gamer - REAL")) ie.fillStyle = "cyan";
+	    if (this.name.startsWith(">>Stinger - REAL<<")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">Stingerr<")) ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
       else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "red";
