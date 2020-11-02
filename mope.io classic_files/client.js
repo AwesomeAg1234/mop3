@@ -83,10 +83,11 @@ var camzoom = 26;
         r("LOCAL TEST", "", o);
     else {
         var o = "USA";
-        var europe = "EUROPE"
-        var asia = "ASIA"
+        //var europe = "EUROPE"
+        //var asia = "ASIA"
 		r("US WEST", "52.38.222.2", o);
-    r("LONDON 1", "52.56.69.195", europe)
+    r("LONDON 1", "52.56.69.195", o)
+    r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
        // r("LOCALTESTING2", "0.0.0.0", o);
     }
