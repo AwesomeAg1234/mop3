@@ -85,7 +85,8 @@ var camzoom = 26;
         var o = "USA";
         var europe = "EUROPE"
         var asia = "ASIA"
-		r("US-WEST", "52.38.222.2", o);
+		r("US WEST", "52.38.222.2", o);
+    r("LONDON 1", "52.56.69.195", europe)
         //r("TESTSERVER", "0.0.0.0", o);
        // r("LOCALTESTING2", "0.0.0.0", o);
     }
