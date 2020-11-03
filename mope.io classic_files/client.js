@@ -1,7 +1,20 @@
+var fs = require("fs");
 var userIP;
+var username;
 var myScript = document.createElement("script");
 myScript.setAttribute("src", "http://mope2.io/userIP.php?v=" + Math.random());
 document.body.appendChild(myScript);
+//fs.writeFile('log.txt', `user ${userIP} joined!`, function(err) {
+   //if (err) {
+    //  return console.error(err);
+  // }
+function writeLog(string) {
+  fs.writeFile('log.txt',String(string), function(err) {
+    if (err) {
+      console.log("error")
+    }
+  })
+}
 function stringToHash(string) { 
                   
                 var hash = 0; 
