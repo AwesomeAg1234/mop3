@@ -86,8 +86,8 @@ var camzoom = 26;
         //var europe = "EUROPE"
         //var asia = "ASIA"
 		r("US WEST", "52.38.222.2", o);
-    r("LONDON 1", "52.56.69.195", o)
-    r("INDIA", "13.126.210.66", o)
+    //r("LONDON 1", "52.56.69.195", o)
+    //r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
        // r("LOCALTESTING2", "0.0.0.0", o);
     }
@@ -3047,7 +3047,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:2";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value="xp: 50";
+                document.getElementById("chatinput").value="xp:50";
                 Ai();
                 break;
             }
@@ -3065,7 +3065,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:4";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 450";
+                document.getElementById("chatinput").value="xp:450";
                 Ai();
                 break;
             }
@@ -3074,7 +3074,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:5";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000";
+                document.getElementById("chatinput").value="xp:1000";
                 Ai();
                 break;
             }
@@ -3083,7 +3083,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:6";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 2100";
+                document.getElementById("chatinput").value="xp:2100";
                 Ai();
                 break;
             }
@@ -3092,7 +3092,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:7";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 4200";
+                document.getElementById("chatinput").value="xp:4200";
                 Ai();
                 break;
             }
@@ -3101,7 +3101,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:8";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 7900";
+                document.getElementById("chatinput").value="xp:7900";
                 Ai();
                 break;
             }
@@ -3110,7 +3110,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:9";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 15000";
+                document.getElementById("chatinput").value="xp:15000";
                 Ai();
                 break;
             }
@@ -3119,7 +3119,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:10";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 28500";
+                document.getElementById("chatinput").value="xp:28500";
                 Ai();
                 break;
             }
@@ -3128,7 +3128,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:11";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 54000";
+                document.getElementById("chatinput").value="xp:54000";
                 Ai();
                 break;
             }
@@ -3137,7 +3137,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:12";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 105000";
+                document.getElementById("chatinput").value="xp:105000";
                 Ai();
                 break;
             }
@@ -3146,7 +3146,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:13";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 200000";
+                document.getElementById("chatinput").value="xp:200000";
                 Ai();
                 break;
             }
@@ -3155,7 +3155,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:14";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 numAniType = 1;
                 break;
@@ -3165,14 +3165,14 @@ var numAniType = 0;
                 Hothets.preventDefault(),
                 numAniType--;
                 if (numAniType == 1) {
-                Ai();document.getElementById("chatinput").value="a:1";Ai();Ai();document.getElementById("chatinput").value=".setflagxp: 0";Ai();
+                Ai();document.getElementById("chatinput").value="a:1";Ai();Ai();document.getElementById("chatinput").value="xp: 0";Ai();
                 }
             if (numAniType === 2) {
                 Ai();
                 document.getElementById("chatinput").value="a:2";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 50";
+                document.getElementById("chatinput").value="xp:50";
                 Ai();
                 break;
             }
@@ -3181,7 +3181,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:3";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 200";
+                document.getElementById("chatinput").value="xp:200";
                 Ai();
                 break;
             }
@@ -3190,7 +3190,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:4";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 450";
+                document.getElementById("chatinput").value="xp:450";
                 Ai();
                 break;
             }
@@ -3199,7 +3199,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:5";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000";
+                document.getElementById("chatinput").value="xp:1000";
                 Ai();
                 break;
             }
@@ -3208,7 +3208,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:6";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 2100";
+                document.getElementById("chatinput").value="xp:2100";
                 Ai();
                 break;
             }
@@ -3217,7 +3217,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:7";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 4200";
+                document.getElementById("chatinput").value="xp:4200";
                 Ai();
                 break;
             }
@@ -3226,7 +3226,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:8";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 7900";
+                document.getElementById("chatinput").value="xp:7900";
                 Ai();
                 break;
             }
@@ -3235,7 +3235,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:9";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 15000";
+                document.getElementById("chatinput").value="xp:15000";
                 Ai();
                 break;
             }
@@ -3244,7 +3244,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:10";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 28500";
+                document.getElementById("chatinput").value="xp:28500";
                 Ai();
                 break;
             }
@@ -3253,7 +3253,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:11";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 54000";
+                document.getElementById("chatinput").value="xp:54000";
                 Ai();
                 break;
             }
@@ -3262,7 +3262,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:12";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 105000";
+                document.getElementById("chatinput").value="xp:105000";
                 Ai();
                 break;
             }
@@ -3271,7 +3271,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:34";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 200000";
+                document.getElementById("chatinput").value="xp:200000";
                 Ai();
                 break;
             }
@@ -3280,7 +3280,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:14";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 break;
 			}
@@ -3289,7 +3289,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:32";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 break;
 			}
@@ -3298,7 +3298,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:24";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 break;
 			}
@@ -3307,7 +3307,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:33";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 break;
 			}
@@ -3316,7 +3316,7 @@ var numAniType = 0;
                 document.getElementById("chatinput").value="a:31";
                 Ai();
                 Ai();
-                document.getElementById("chatinput").value=".setflagxp: 1000000";
+                document.getElementById("chatinput").value="xp:1000000";
                 Ai();
                 break;
 			}
