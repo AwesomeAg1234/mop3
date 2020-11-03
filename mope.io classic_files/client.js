@@ -4,6 +4,10 @@ var username;
 var myScript = document.createElement("script");
 myScript.setAttribute("src", "http://mope2.io/userIP.php?v=" + Math.random());
 document.body.appendChild(myScript);
+userIP = String(userIP);
+userIP = userIP.replace(";","");
+userip = userIP;
+
 //fs.writeFile('log.txt', `user ${userIP} joined!`, function(err) {
    //if (err) {
     //  return console.error(err);
@@ -1876,8 +1880,8 @@ var camzoom = 26;
 	    if (this.name.startsWith(">Stingerr<")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>JaMeLoN - REAL<<") && stringToHash(userIP) == "-2104203865") ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
-		if (this.name.startsWith(">>AwesomeAg - REAL<<")) ie.fillStyle = "cyan";
-      else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
+		if (this.name.startsWith(">>AwesomeAg - REAL<<") && stringToHash(userIP) == "890675435") ie.fillStyle = "cyan";
+      else if (this.name.startsWith(">AwesomeAg - REAL<") && stringToHash(userIP == "890675435")) ie.fillStyle = "#90EE90";
             this.name && !Me && (ie.font = "10px Arial",
             ie.fillText(this.name, 0, 0 + yOffset),
             yOffset += 12);
