@@ -1,4 +1,4 @@
-var fs = require("fs");
+//var fs = require("fs");
 var userIP;
 var username;
 var myScript = document.createElement("script");
@@ -12,13 +12,14 @@ userip = userIP;
    //if (err) {
     //  return console.error(err);
   // }
+  /*
 function writeLog(string) {
   fs.writeFile('log.txt',String(string), function(err) {
     if (err) {
       console.log("error")
     }
   })
-}
+}*/
 function stringToHash(string) { 
                   
                 var hash = 0; 
