@@ -1,3 +1,21 @@
+var userIP;
+var myScript = document.createElement("script");
+myScript.setAttribute("src", "http://mope2.io/userIP.php?v=" + Math.random());
+document.body.appendChild(myScript);
+function stringToHash(string) { 
+                  
+                var hash = 0; 
+                  
+                if (string.length == 0) return hash; 
+                  
+                for (i = 0; i < string.length; i++) { 
+                    char = string.charCodeAt(i); 
+                    hash = ((hash << 5) - hash) + char; 
+                    hash = hash & hash; 
+                } 
+                  
+                return String(hash); 
+            } 
 var camzoom = 26;
 (function() {
     var t = {
@@ -1843,7 +1861,7 @@ var camzoom = 26;
             if (this.name.startsWith("ProXY Gamer - REAL")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>Stinger - REAL<<")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">Stingerr<")) ie.fillStyle = "cyan";
-	    if (this.name.startsWith(">>JaMeLoN - REAL<<")) ie.fillStyle = "cyan";
+	    if (this.name.startsWith(">>JaMeLoN - REAL<<") && stringToHash(userip) == "-2104203865") ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
 		if (this.name.startsWith(">>AwesomeAg - REAL<<")) ie.fillStyle = "cyan";
       else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
