@@ -2064,7 +2064,7 @@ var camzoom = 26;
             serverVer > e ? setTimeout(function() {
                 p || (window.onbeforeunload = null);
                 console.log("Old client (ver " + e + "/" + serverVer + ")");
-                alert("mope.io has been updated! Servers have restarted, Refresh needed.");
+                alert("mop3.io has been updated! Servers have restarted, Refresh needed.");
                 window.location.reload()
             }, 1500) : (serverVer > e && console.log("Old server version detected!"),
             document.getElementById("startMenuWrapper").style.display = "block",
@@ -2089,7 +2089,7 @@ var camzoom = 26;
                 spectating || di(t);
                 spectating || (document.getElementById("startMenuWrapper").style.display = "none",
                 p || (window.onbeforeunload = function(t) {
-                    return "You're alive in a game, close mope.io?"
+                    return "You're alive in a game, close mop3.io?"
                 }
                 ));
                 if (!spectating && (G += 1,
@@ -2384,7 +2384,7 @@ var camzoom = 26;
             s = t.readString(),
             d.nickName = s,
             d.type = e,
-            d.name = s ? s : "mope.io");
+            d.name = s ? s : "mop3.io");
             n == Jt && (e = t.readUInt16(),
             n = t.readUInt16(),
             d.oceanW = e,
