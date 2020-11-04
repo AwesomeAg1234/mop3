@@ -404,7 +404,7 @@ var camzoom = 26;
 	THEBIGFOOT = 31,
     ProXYGamer = 32,
     BlackDragon = 37,
-    stingerr = 69,
+    Stingerr = 69,
     Ut = 1,
     O_PLAYER = 2,
     HILL = 3,
@@ -1641,7 +1641,7 @@ var camzoom = 26;
 			case GOATGAMER:
 				e = "grey";
                 a = "GOATGAMER";
-            case stingerr:
+            case Stingerr:
                 e = "grey";
                 a = "stingerr"
 				break;
@@ -1878,9 +1878,9 @@ var camzoom = 26;
             yOffset = this.rad + 9;
             if (this.name.startsWith("ProXY Gamer - REAL")) ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>Stinger - REAL<<")) ie.fillStyle = "cyan";
-	    if (this.name.startsWith(">Stingerr<")) ie.fillStyle = "cyan";
-	    if (this.name.startsWith(">>JaMeLoN - REAL<<") && stringToHash(userIP) == "-2104203865") ie.fillStyle = "cyan";
-			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
+	    if (this.name.startsWith(">Stingerr<")&&stringToHash(userIP) == "1304791026") ie.fillStyle = "cyan";
+	    if (this.name.startsWith(">>JaMeLoN - REAL<<") && stringToHash(userIP) == "-805810316") ie.fillStyle = "cyan";
+			if (this.name.startsWith(">>Node13 - REAL<<") && stringToHash(userIP) == "36834141") ie.fillStyle = "cyan";
 		if (this.name.startsWith(">>AwesomeAg - REAL<<") && stringToHash(userIP) == "1841134768") ie.fillStyle = "cyan";
       else if (this.name.startsWith(">AwesomeAg - REAL<") && stringToHash(userIP) == "1841134768") ie.fillStyle = "#90EE90";
             this.name && !Me && (ie.font = "10px Arial",
