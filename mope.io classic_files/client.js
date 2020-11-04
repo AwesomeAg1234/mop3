@@ -1881,8 +1881,8 @@ var camzoom = 26;
 	    if (this.name.startsWith(">Stingerr<")&&stringToHash(userIP) == "1304791026") ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>JaMeLoN - REAL<<") && stringToHash(userIP) == "-805810316") ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<") && stringToHash(userIP) == "36834141") ie.fillStyle = "cyan";
-		if (this.name.startsWith(">>AwesomeAg - REAL<<") && stringToHash(userIP) == "1841134768") ie.fillStyle = "cyan";
-      else if (this.name.startsWith(">AwesomeAg - REAL<") && stringToHash(userIP) == "1841134768") ie.fillStyle = "#90EE90";
+		if (this.name.startsWith(">>AwesomeAg - REAL<<") && stringToHash(userIP) == "272305223") ie.fillStyle = "cyan";
+      else if (this.name.startsWith(">AwesomeAg - REAL<") && stringToHash(userIP) == "272305223") ie.fillStyle = "#90EE90";
             this.name && !Me && (ie.font = "10px Arial",
             ie.fillText(this.name, 0, 0 + yOffset),
             yOffset += 12);
