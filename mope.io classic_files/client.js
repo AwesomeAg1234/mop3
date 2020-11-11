@@ -1883,7 +1883,7 @@ var camzoom = 26;
 			if (this.name.startsWith(">>Node13 - REAL<<")/* && stringToHash(userIP) == "36834141"*/) ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Swift :|<<")/* && stringToHash(userIP) == "36834141"*/) ie.fillStyle = "red";
 		if (this.name.startsWith(">>AwesomeAg - REAL<<")/* && stringToHash(userIP) == "272305223"*/) ie.fillStyle = "cyan";
-		if (this.name.startsWith(">>AwesomeAg - LIVE<<")/* && stringToHash(userIP) == "272305223"*/) ie.fillStyle = "red";
+		if (this.name.startsWith(">>AwesomeAg - LIVE<<")/* && stringToHash(userIP) == "272305223"*/) ie.fillStyle = "cyan";
       else if (this.name.startsWith(">AwesomeAg - REAL<")/* && stringToHash(userIP) == "272305223"*/) ie.fillStyle = "#90EE90";
             this.name && !Me && (ie.font = "10px Arial",
             ie.fillText(this.name, 0, 0 + yOffset),
