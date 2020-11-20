@@ -958,16 +958,22 @@ var camzoom = 26;
 							ie.fill();
                             break;
                         case CARROT:
-                            if (this.isGreenOutlined()){
-                                skinpath = "skins/carrot_e.png"
+                            if (numAniType <= 1){
+                                skinpath = "skins/carrot.png"
                             }
                             else {
-                                skinpath = "skins/carrot.png"
+								skinpath = "skins/carrot_e.png"
                             }
                             if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
                         case CACTUS:
-                            if (i = uia("skins/cactus" + (this.isGreenOutlined() ? "_e" : "") + ".png")) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
+							 if (numAniType <= 11){
+                                skinpath = "skins/cactus.png"
+                            }
+                            else {
+								skinpath = "skins/cactus_e.png"
+                            }
+                            if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
 						case LILYPAD:
 							ie.fillStyle = i,
@@ -2228,7 +2234,7 @@ var camzoom = 26;
             ra = t.readUInt32();
             switch (a) {
             case rt:
-                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!\nUse the up and down arrow keys to level up\nYou can also use a:2 for rabbit - explore it!";
+                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!\nLook at the panel on home screen for commands!";
                 break;
             case ot:
                 gi = "UPGRADED to rabbit:\nRemember, Eat anything outlined in LIGHT-GREEN!\n (You can now eat MICE and Carrots!)";
@@ -3769,7 +3775,7 @@ function ScreenText(ArgumentText, ArgumentText2) {
 }
 */
 //)();
-// a
+
 
 ();
         }
