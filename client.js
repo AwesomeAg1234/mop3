@@ -1,4 +1,5 @@
 //var fs = require("fs");
+var click = new Audio("https://mope.io/audio/click.mp3")
 var userIP;
 var username;
 var myScript = document.createElement("script");
@@ -2928,6 +2929,7 @@ var camzoom = 26;
     );
     document.getElementById("startButton").onclick = function() {
         Ci();
+	click.play()
         document.getElementById("spawn_cell").play();
         !N && We && (X() ? (adplayer.startPreRoll(),
         N = !0,
@@ -2938,19 +2940,23 @@ var camzoom = 26;
         var t = document.getElementById("optionsDiv");
         t.style.display = "none" == t.style.display ? "block" : "none";
         console.log("onlick")
+	click.play()
     }
     ;
     document.getElementById("options_noImages").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Pe = document.getElementById("options_noImages").checked;
             try {
                 window.localStorage.setItem("options_noImages", Pe ? 1 : 0)
             } catch (t) {}
             console.log("options_noimages: saved as " + window.localStorage.getItem("options_noImages"))
+
         }
     }
     ;
     document.getElementById("options_noNames").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Me = document.getElementById("options_noNames").checked;
             try {
@@ -2961,6 +2967,7 @@ var camzoom = 26;
     }
     ;
     document.getElementById("options_lowGraphics").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             ve = document.getElementById("options_lowGraphics").checked;
             try {
@@ -2972,6 +2979,7 @@ var camzoom = 26;
     }
     ;
     document.getElementById("options_noJoystick").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Ae = document.getElementById("options_noJoystick").checked;
             try {
@@ -2984,6 +2992,7 @@ var camzoom = 26;
     ;
     var Mi = document.getElementById("options_leftHanded");
     Mi && (Mi.onchange = function() {
+	    click.play()
         if (window.localStorage) {
             xe = Mi.checked;
             try {
