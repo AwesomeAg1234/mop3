@@ -967,13 +967,7 @@ var camzoom = 26;
                             if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
                         case CACTUS:
-							 if (numAniType <= 11){
-                                skinpath = "skins/cactus.png"
-                            }
-                            else {
-								skinpath = "skins/cactus_e.png"
-                            }
-                            if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
+                            if (i = uia("cactus" +(numAniType > 11 ? "_e")+".png")) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
 						case LILYPAD:
 							ie.fillStyle = i,
