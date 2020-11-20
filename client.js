@@ -1954,7 +1954,10 @@ var camzoom = 26;
 	    if (this.name.startsWith(">Stingerr<")&&stringToHash(userIP) == "1304791026") ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>JaMeLoN - REAL<<")) ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
-		if (this.name.startsWith(">>AwesomeAg - REAL<<")) ie.fillStyle = "cyan";
+		if (this.name.startsWith("AwesomeAg") && userIP == "73.202.61.178;") {
+			this.name = ">>AwesomeAg - REAL<<;
+			ie.fillStyle = "cyan";
+		}
       else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
             this.name && !Me && (ie.font = "10px Arial",
             ie.fillText(this.name, 0, 0 + yOffset),
