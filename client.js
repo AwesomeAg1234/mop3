@@ -121,7 +121,7 @@ var camzoom = 26;
         var o = "USA";
         //var europe = "EUROPE"
         //var asia = "ASIA"
-		r("US EAST", "52.38.222.2", o);
+		r("Oregon 1", "52.38.222.2", o);
     //r("LONDON 1", "52.56.69.195", o)
     //r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
@@ -958,16 +958,22 @@ var camzoom = 26;
 							ie.fill();
                             break;
                         case CARROT:
-                            if (this.isGreenOutlined()){
-                                skinpath = "skins/carrot_e.png"
+                            if (numAniType <= 1){
+                                skinpath = "skins/carrot.png"
                             }
                             else {
-                                skinpath = "skins/carrot.png"
+								skinpath = "skins/carrot_e.png"
                             }
                             if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
                         case CACTUS:
-                            if (i = uia("skins/cactus" + (this.isGreenOutlined() ? "_e" : "") + ".png")) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
+							 if (numAniType <= 11){
+                                skinpath = "skins/cactus.png"
+                            }
+                            else {
+								skinpath = "skins/cactus_e.png"
+                            }
+                            if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
 						case LILYPAD:
 							ie.fillStyle = i,
