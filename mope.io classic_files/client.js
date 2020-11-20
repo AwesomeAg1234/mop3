@@ -2228,7 +2228,7 @@ var camzoom = 26;
             ra = t.readUInt32();
             switch (a) {
             case rt:
-                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!";
+                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!\nUse the up and down arrow keys to level up\nYou can also use a:2 for rabbit - explore it!";
                 break;
             case ot:
                 gi = "UPGRADED to rabbit:\nRemember, Eat anything outlined in LIGHT-GREEN!\n (You can now eat MICE and Carrots!)";
