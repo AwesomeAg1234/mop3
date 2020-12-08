@@ -1,4 +1,5 @@
 //var fs = require("fs");
+var click = new Audio("https://mope.io/audio/click.mp3")
 var userIP;
 var username;
 var myScript = document.createElement("script");
@@ -116,12 +117,13 @@ var camzoom = 26;
     if (a)
         o = "USA",
         console.log("DEBUG MODE!!!!!!!!!!!!!!!!!!!!!!!", o),
-        r("LOCAL TEST", "52.5.5.218", o);
+        r("LOCAL TEST", "0.0.0.0", o);
     else {
         var o = "USA";
         //var europe = "EUROPE"
         //var asia = "ASIA"
-		r("Oregon 1", "52.38.222.2", o);
+        r("LOCAL TEST", "0.0.0.0", o);
+        r("Oregon 1", "52.38.222.2", o)
     //r("LONDON 1", "52.56.69.195", o)
     //r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
@@ -436,7 +438,8 @@ var camzoom = 26;
 	YETI_ABILITY = 28,
     NEW_OBJ = 29,
     CARROT = 30,
-    CACTUS = 31
+    CACTUS = 31,
+    ALOE = 32
 	  , rt = 1
       , ot = 2
       , ht = 3
@@ -803,6 +806,7 @@ var camzoom = 26;
 					case REDMUSHROOM:
                     case CARROT:
                     case CACTUS:
+                    case ALOE:
 					case LILYPAD:
 					case SMALL_HOLE:
 					case WHIRLPOOL:
@@ -812,7 +816,7 @@ var camzoom = 26;
 				if (p) {
 					var a;
 				    a = (ni - this.spawnTime) / 1e3;
-					var i = this.oType == MUSHROOM ||this.oType == CARROT ||this.oType == REDMUSHROOM || this.oType == CACTUS ||this.oType == LILYPAD ? 2 : 1.3,
+					var i = this.oType == MUSHROOM ||this.oType == CARROT ||this.oType == REDMUSHROOM || this.oType == CACTUS || this.oType == ALOE ||this.oType == LILYPAD ? 2 : 1.3,
 					n = .1;
 					if (this.oType == SMALL_HOLE || this.oType == BIG_HOLE || this.oType == WHIRLPOOL)
                     i = 2.5,
@@ -967,11 +971,20 @@ var camzoom = 26;
                             if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
                         case CACTUS:
-							 if (numAniType <= 11){
+                            if (numAniType <= 12){
                                 skinpath = "skins/cactus.png"
                             }
                             else {
 								skinpath = "skins/cactus_e.png"
+                            }
+                            if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
+                            break;
+                        case ALOE:
+                            if (numAniType <= 11){
+                                skinpath = "skins/aloevera.png"
+                            }
+                            else {
+								skinpath = "skins/aloevera_e.png"
                             }
                             if (i = uia(skinpath)) e = this.rad, ie.rotate(this.rPer * Math.PI * 2), ie.drawImage(i, -e, -e, 2 * e, 2 * e);
                             break;
@@ -1960,8 +1973,11 @@ var camzoom = 26;
 	    if (this.name.startsWith(">Stingerr<")&&stringToHash(userIP) == "1304791026") ie.fillStyle = "cyan";
 	    if (this.name.startsWith(">>JaMeLoN - REAL<<")) ie.fillStyle = "cyan";
 			if (this.name.startsWith(">>Node13 - REAL<<")) ie.fillStyle = "cyan";
-		if (this.name.startsWith(">>AwesomeAg - REAL<<")) ie.fillStyle = "cyan";
-      else if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
+        if (this.name.startsWith(">AwesomeAg - REAL<")) ie.fillStyle = "#90EE90";
+        if (userIP == "73.202.61.178;") {
+			this.name = ">>AwesomeAg - REAL<<";
+			ie.fillStyle = "cyan";
+		}
             this.name && !Me && (ie.font = "10px Arial",
             ie.fillText(this.name, 0, 0 + yOffset),
             yOffset += 12);
@@ -2122,6 +2138,7 @@ var camzoom = 26;
     function $a() {
         if (window.localStorage)
             try {
+                console.log("last ip: " + window.localStorage.getItem("lastServerIP"))
                 window.localStorage.setItem("lastServerIP", A.ip)
             } catch (t) {}
         document.getElementById("serverSelect").selectedIndex = v
@@ -2234,7 +2251,7 @@ var camzoom = 26;
             ra = t.readUInt32();
             switch (a) {
             case rt:
-                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!\nLook at the panel on home screen for commands!";
+                gi = "A little mouse...\n Eat red berries to grow!\n Red-outlined players can eat you!";
                 break;
             case ot:
                 gi = "UPGRADED to rabbit:\nRemember, Eat anything outlined in LIGHT-GREEN!\n (You can now eat MICE and Carrots!)";
@@ -2410,7 +2427,7 @@ var camzoom = 26;
         case 22:
             t = t.readString();
             a = Sa(A.ip);
-            Pi("mope.io/?s=" + a + "&l=" + t);
+            Pi("mop3.io/?s=" + a + "&l=" + t);
             break;
         case 23:
             t = t.readUInt8(),
@@ -2680,7 +2697,7 @@ var camzoom = 26;
             e.textAlign = "left";
             e.font = "17px Arial";
             for (n = 0; n < t.length; ++n)
-                i = Me ? "" : t[n].name || "mope.io",
+                i = Me ? "" : t[n].name || "mop3.io",
                 a == t[n].rank ? (e.fillStyle = "#FEED92",
                 Me && (i = "you")) : e.fillStyle = "#FFFFFF",
                 i = t[n].rank + ". " + i + " (" + Na(t[n].score) + ")",
@@ -2931,6 +2948,7 @@ var camzoom = 26;
     );
     document.getElementById("startButton").onclick = function() {
         Ci();
+	click.play()
         document.getElementById("spawn_cell").play();
         !N && We && (X() ? (adplayer.startPreRoll(),
         N = !0,
@@ -2941,19 +2959,23 @@ var camzoom = 26;
         var t = document.getElementById("optionsDiv");
         t.style.display = "none" == t.style.display ? "block" : "none";
         console.log("onlick")
+	click.play()
     }
     ;
     document.getElementById("options_noImages").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Pe = document.getElementById("options_noImages").checked;
             try {
                 window.localStorage.setItem("options_noImages", Pe ? 1 : 0)
             } catch (t) {}
             console.log("options_noimages: saved as " + window.localStorage.getItem("options_noImages"))
+
         }
     }
     ;
     document.getElementById("options_noNames").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Me = document.getElementById("options_noNames").checked;
             try {
@@ -2964,6 +2986,7 @@ var camzoom = 26;
     }
     ;
     document.getElementById("options_lowGraphics").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             ve = document.getElementById("options_lowGraphics").checked;
             try {
@@ -2975,6 +2998,7 @@ var camzoom = 26;
     }
     ;
     document.getElementById("options_noJoystick").onchange = function() {
+	    click.play()
         if (window.localStorage) {
             Ae = document.getElementById("options_noJoystick").checked;
             try {
@@ -2987,6 +3011,7 @@ var camzoom = 26;
     ;
     var Mi = document.getElementById("options_leftHanded");
     Mi && (Mi.onchange = function() {
+	    click.play()
         if (window.localStorage) {
             xe = Mi.checked;
             try {
