@@ -407,6 +407,7 @@ var camzoom = 26;
     ProXYGamer = 32,
     BlackDragon = 37,
     Stingerr = 69,
+GoldenMouse = 70,
     Ut = 1,
     O_PLAYER = 2,
     HILL = 3,
@@ -1733,10 +1734,15 @@ var camzoom = 26;
 			case GOATGAMER:
 				e = "grey";
                 a = "GOATGAMER";
+		break;
             case Stingerr:
                 e = "grey";
                 a = "stingerr"
 				break;
+	case GoldenMouse:
+		e = "gold";
+		a = "golden_mouse";
+		break;
             default:
                 e = "#00FF00";
                 a = "Land Monster";
@@ -2354,6 +2360,8 @@ var camzoom = 26;
                 break;
             case Stingerr:
                 gi = "UPGRADED to STINGERR!\nYou are a pro ytber xd"
+	case GoldenMouse:
+		gi = "A golden mouse... The king of mice!\nRule all the mice with your golden touch"
             default:
                 gi = "UPGRADED to LAND MONSTER \nRule the world! All will fear you!"
             }
