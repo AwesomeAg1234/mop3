@@ -122,8 +122,8 @@ var camzoom = 26;
         var o = "USA";
         //var europe = "EUROPE"
         //var asia = "ASIA"
-        r("LOCAL TEST", "0.0.0.0", o);
-        r("Oregon 1", "3.134.86.212", o)
+        //r("LOCAL TEST", "0.0.0.0", o);
+        r("US-WEST", "3.134.86.212", o)
     //r("LONDON 1", "52.56.69.195", o)
     //r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
