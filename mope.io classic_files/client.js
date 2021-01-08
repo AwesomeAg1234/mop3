@@ -95,7 +95,7 @@ var camzoom = 26;
     }, "es6-impl", "es3");
     var e = 153
       , a = !1
-      , i = "52.5.5.218"
+      , i = "3.134.86.212"
       , n = 400
       , s = []
       , l = {
@@ -123,7 +123,7 @@ var camzoom = 26;
         //var europe = "EUROPE"
         //var asia = "ASIA"
         r("LOCAL TEST", "0.0.0.0", o);
-        r("Oregon 1", "52.38.222.2", o)
+        r("Oregon 1", "3.134.86.212", o)
     //r("LONDON 1", "52.56.69.195", o)
     //r("INDIA", "13.126.210.66", o)
         //r("TESTSERVER", "0.0.0.0", o);
